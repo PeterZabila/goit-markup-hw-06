@@ -397,48 +397,94 @@
                 </li>
               </ul> 
             </div>
+
+            <form class="subscription-form">
+                <p class="subscription-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                
+                <div class="input-wrapper">
+                  <input type="text" name="email" id="subscription-email" class="subscription-email" placeholder="E-mail" required>
+                  <button type="submit" class="subscription-button"><span class="button-title">Подписаться</span>
+                    <!--<svg>
+                      <use href="./images/icons.svg#instagram" width="24px" height="24px"></use>
+
+                    </svg> -->
+                  </button>
+                </div>
+              </form>
+
+
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button type="button" class="modal-close" data-modal-close >x
-            <!-- <svg>
-              <use href="">
-              </use>
-            </svg> -->
-          </button>
-          
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close >x
+          <!-- <svg>
+            <use href="">
+            </use>
+          </svg> -->
+        </button>
+        
 
-          <div class="form" autocomplete="off">
+        <div class="form" autocomplete="off">
+          <h4 class="form-title">Оставьте свои данные, мы вам перезвоним</h4>
+          
+          <div class="form-field">
+            <label for="name" class="form-label">Имя</label>
+            <input type="text" class="form-input" name="name" id="name" placeholder=" ">
+            
+            <svg class="form-icon">
+              <use href="./images/icons.svg#user" width="12px" height="12px"> </use>
+            </svg>
+            
+          </div>
+        
+          <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+            <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " required> 
          
-            <div class="form-field">
-              <input type="text" class="form-input" name="name" id="name" placeholder=" ">
-              <label for="name" class="form-label">Имя</label>
-              
-            </div>
-          
-            <div class="form-field">
-              
-              <input type="tel" class="form-input" name="tel" id="tel" placeholder=" "> 
-              <label for="tel" class="form-label">Телефон</label>
-            </div>
-
-            <div class="form-field">
-              
-              <input type="email" class="form-input" name="mail" id="mail" placeholder=" ">
-              <label for="mail" class="form-label">Почта</label>
-            </div>
-          
-            <button type="submit">Отправить</button>
+            <svg class="form-icon">
+              <use href="./images/icons.svg#phone" width="13px" height="13px"> </use>
+            </svg>
 
           </div>
 
-           
+          <div class="form-field">
+            <label for="mail" class="form-label">Почта</label>
+            <input type="email" class="form-input" name="mail" id="mail" placeholder=" ">
+                   
+            <svg class="form-icon">
+              <use href="./images/icons.svg#letter" width="15px" height="12px"> </use>
+            </svg>
+
+
+          </div>
          
+          <div class="form-field textarea">
+            <label for="text-area" class="form-label">Комментарий</label>
+            <textarea name="textarea" id="text-area" placeholder="Введите текст"></textarea>
+          </div>
+
+          <label class="label">
+            <input type="checkbox" name="checkbox" id="checkbox" value="Соглашаюсь с рассылкой и принимаю" class="checkbox">
+           
+            <span class="icon"></span>
+             <!-- <svg class="checkmark">
+              <use href="./images/icons.svg#checkmark"></use>
+            </svg> -->
+            <span class="licence-agreed">Соглашаюсь с рассылкой и принимаю<span class="terms-of-usage"><a href=""> Условия договора</a></span></span>
+          </label>
+
+
+
+        <div class="submit-button">
+          <button type="submit" class="button-submit">Отправить</button>
+        </div>
 
         </div>
-    </div>
-    <script src="./js/modal.js"></script>
+
+      </div>
+  </div>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
