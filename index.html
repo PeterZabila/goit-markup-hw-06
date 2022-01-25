@@ -26,6 +26,26 @@
                 <li class="nav-item"><a class="nav-link current" href="./index.html">Студия</a></li>
                 <li class="nav-item"><a class="nav-link " href="./portfolio.html">Портфолио</a></li>
                 <li class="nav-item"><a class="nav-link " href="">Контакты</a></li>
+                <!-- <li class="nav-item">
+
+                  <label for="navbar">Услуги
+                  <select name="navbar" id="navbar" class="navbar">
+
+                      <option value="Дизайн" id="navbar-1" class="navbar-item">Дизайн</option>
+                 
+                  
+                      <option value="Верстка" id="navbar-2" class="navbar-item">Верстка</option>
+  
+              
+                      <option value="Аналитика" id="navbar-3" class="navbar-item">Аналитика</option>
+          
+        
+                      <option value="Тестирование" id="navbar-4" class="navbar-item">Тестирование</option>
+
+
+                  </select>
+                </label>
+                </li> -->
               </ul>
             </nav>
 
@@ -418,11 +438,11 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close >x
-          <!-- <svg>
-            <use href="">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close__icon">
+            <use href="./images/icons.svg#close">
             </use>
-          </svg> -->
+          </svg>
         </button>
         
 
@@ -433,8 +453,8 @@
             <label for="name" class="form-label">Имя</label>
             <input type="text" class="form-input" name="name" id="name" placeholder=" ">
             
-            <svg class="form-icon">
-              <use href="./images/icons.svg#user" width="12px" height="12px"> </use>
+            <svg class="form-icon" width="12px" height="12px">
+              <use href="./images/icons.svg#user"> </use>
             </svg>
             
           </div>
@@ -443,7 +463,7 @@
             <label for="tel" class="form-label">Телефон</label>
             <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " required> 
          
-            <svg class="form-icon">
+            <svg class="form-icon" width="13px" height="13px">
               <use href="./images/icons.svg#phone" width="13px" height="13px"> </use>
             </svg>
 
@@ -453,7 +473,7 @@
             <label for="mail" class="form-label">Почта</label>
             <input type="email" class="form-input" name="mail" id="mail" placeholder=" ">
                    
-            <svg class="form-icon">
+            <svg class="form-icon" width="15px" height="12px">
               <use href="./images/icons.svg#letter" width="15px" height="12px"> </use>
             </svg>
 
@@ -465,7 +485,7 @@
             <textarea name="textarea" id="text-area" placeholder="Введите текст"></textarea>
           </div>
 
-          <label class="label">
+          <label for="checkbox" class="label">
             <input type="checkbox" name="checkbox" id="checkbox" value="Соглашаюсь с рассылкой и принимаю" class="checkbox">
            
             <span class="icon"></span>
